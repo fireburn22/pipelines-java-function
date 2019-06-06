@@ -9,6 +9,6 @@ ls -1 $AGENT_BUILDDIRECTORY
 echo "SYSTEM_HOSTTYPE is $SYSTEM_HOSTTYPE"
 echo "systemdefaultworkingdircotry is:"
 ls -l $(system.defaultworkingdirectory)/target/azure-functions/
-echo "buildartifactsstagingdirectory is:
+echo "buildartifactsstagingdirectory is:"
 ls -l  $(build.artifactstagingdirectory)
 echo "Over and out."
