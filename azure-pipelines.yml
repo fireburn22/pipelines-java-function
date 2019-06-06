@@ -7,7 +7,7 @@
 # set some variables
 variables:
   # the name of the service connection that you created above
-  serviceConnectionToAzure: connecttoazure
+  serviceConnectionToAzure: connectoazure
   # name of your web app
   
   appName: javafunctionapp
