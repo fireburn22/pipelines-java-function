@@ -31,6 +31,10 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
+- task: ShellScript@2
+  inputs:
+    scriptPath: 'test.sh'
+
 # to deploy to your app service
 - task: CopyFiles@2
   displayName: Copy Files
@@ -39,6 +43,10 @@ steps:
     Contents: '**'
     TargetFolder: $(build.artifactstagingdirectory)   
 
+- task: ShellScript@2
+  inputs:
+    scriptPath: 'test.sh'
+    
 - task: PublishBuildArtifacts@1
   displayName: Publish Artifact
   inputs:
